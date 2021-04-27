@@ -1,10 +1,23 @@
-
+import Nav from './components/Nav';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Search from './components/Search';
+import Saved from './components/Saved';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-
-      </header>
+      <Router>
+        <div>
+          <Nav />
+          <Switch>
+            <Route exact path='/'>
+              <Search />
+            </Route>
+            <Route>
+              <Saved />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
     </div>
   );
 }
