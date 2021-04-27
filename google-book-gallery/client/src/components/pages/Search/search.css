@@ -1,0 +1,14 @@
+.search-page {
+    color: darkgray;
+    text-align: center;
+}
+
+.search-form {
+    margin: 10%;
+    background-color: white;
+}
+
+.search-results {
+    background-color: white;
+    margin: 10%;
+}
